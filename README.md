@@ -16,6 +16,7 @@ docker run -itd --restart=unless-stopped --net host -v /var/run/docker.sock:/var
 192.168.100.101:880
 
 ### 3、拉起k3s
+```
 autok3s -d create \
     --provider native \
     --name myk3s \
@@ -23,3 +24,4 @@ autok3s -d create \
     --ssh-password "111111" \
     --master-ips 192.168.100.101,192.168.100.102 \
     --worker-ips 192.168.100.101
+```
