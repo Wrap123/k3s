@@ -10,10 +10,11 @@
 - rancher/k3s:v1.21.7-k3s1
 
 ### 2、部署autok3s
+```
 docker run -itd --restart=unless-stopped --net host -v /var/run/docker.sock:/var/run/docker.sock --name=k3s-demo cnrancher/autok3s:v0.5.2
-
+```
 可访问web端
-192.168.100.101:880
+192.168.100.101:8080
 
 ### 3、拉起k3s
 ```
